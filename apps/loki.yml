@@ -5,13 +5,13 @@ metadata:
   namespace: argo
 spec:
   project: default
+  destination:
+    name: https://kubernetes.default.svc
+    namespace: loki
   source:
     repoURL: https://gitlab.com/tomkukral/training-model.git
     targetRevision: HEAD
     path: loki
-  destination:
-    name: https://kubernetes.default.svc
-    namespace: loki
   syncPolicy:
     syncOptions:
     - Validate=true

@@ -8,13 +8,13 @@ metadata:
     app: argocd
 spec:
   project: default
+  destination:
+    name: in-cluster
+    namespace: argo
   source:
     repoURL: https://gitlab.com/tomkukral/training-model.git
     targetRevision: HEAD
     path: argo/cd
-  destination:
-    name: https://kubernetes.default.svc
-    namespace: argo
   syncPolicy:
     syncOptions:
     - Validate=true

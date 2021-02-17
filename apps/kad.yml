@@ -4,10 +4,10 @@ metadata:
   name: kad
   namespace: argo
 spec:
+  project: default
   destination:
     namespace: kad
-    server: https://kubernetes.default.svc
-  project: default
+    server: in-cluster
   source:
     path: helm
     repoURL: https://gitlab.com/6shore.net/kad.git
