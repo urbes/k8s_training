@@ -1,20 +1,17 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: argocd
+  name: loki
   namespace: argo
-  labels:
-    cluster: c0
-    app: argocd
 spec:
   project: default
   source:
     repoURL: https://gitlab.com/tomkukral/training-model.git
     targetRevision: HEAD
-    path: argo/cd
+    path: loki
   destination:
     name: https://kubernetes.default.svc
-    namespace: argo
+    namespace: loki
   syncPolicy:
     syncOptions:
     - Validate=true
