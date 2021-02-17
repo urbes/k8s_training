@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   destination:
-    name: https://kubernetes.default.svc
+    name: in-cluster
     namespace: loki
   source:
     repoURL: https://gitlab.com/tomkukral/training-model.git
