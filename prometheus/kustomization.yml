@@ -5,8 +5,8 @@ resources:
 - pvc.yml
 - ingress.yml
 - svc.yml
-#- be-deploy.yml
-#- be-svc.yml
+- be-deploy.yml
+- be-svc.yml
 - kube-state-metrics.yml
 - prometheus.yml
 - alertmanager.yml
