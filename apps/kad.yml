@@ -19,6 +19,8 @@ spec:
         value: "2"
       - name: ingress.enabled
         value: "true"
+      - name: cluster
+        value: "c0"
   syncPolicy:
     syncOptions:
     - CreateNamespace=true
