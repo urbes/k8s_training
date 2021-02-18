@@ -7,10 +7,10 @@ resources:
 - svc.yml
 #- be-deploy.yml
 #- be-svc.yml
-#- kube-state-metrics.yml
+- kube-state-metrics.yml
 - prometheus.yml
 - alertmanager.yml
-#- grafana.yml
+- grafana.yml
 #- karma.yml
 - node-exporter-ds.yml
 #- telegram-bot-sealed.yml
