@@ -17,6 +17,8 @@ spec:
       parameters:
       - name: replicas
         value: "2"
+      - name: ingress.enabled
+        value: "true"
   syncPolicy:
     syncOptions:
     - CreateNamespace=true
