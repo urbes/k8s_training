@@ -22,7 +22,7 @@ log:
   level: info
 receivers:
 ui:
-  refresh: 60s
+  refresh: 10s
   hideFiltersWhenIdle: true
   colorTitlebar: false
   minimalGroupWidth: 420
