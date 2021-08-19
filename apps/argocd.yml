@@ -1,0 +1,17 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: kad
+  namespace: argo
+spec:
+  destination:
+    namespace: argo
+    server: https://kubernetes.default.svc
+  project: default
+  source:
+    path: argo/cd/
+    repoURL: https://gitlab.com/tomkukral/training-model.git
+    targetRevision: HEAD
+  syncPolicy:
+    syncOptions:
+    - CreateNamespace=true
