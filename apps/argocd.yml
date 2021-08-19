@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: kad
+  name: argocd
   namespace: argo
 spec:
   destination:
