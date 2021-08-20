@@ -62,7 +62,7 @@ configMapGenerator:
   files:
   - config.yml=be-config.yml
 generatorOptions:
-  disableNameSuffixHash: false
+  disableNameSuffixHash: true
   labels:
     generator: kustomize
 #images:
