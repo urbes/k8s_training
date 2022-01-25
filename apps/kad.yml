@@ -13,5 +13,8 @@ spec:
     repoURL: https://gitlab.com/6shore.net/kad.git
     targetRevision: HEAD
   syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
     syncOptions:
     - CreateNamespace=true
